@@ -1,7 +1,7 @@
-const ALL_DATA_URL = 'http://127.0.0.1:5000/api/data';
-const MALE_CHOL_URL = 'http://127.0.0.1:5000//api/male_cholesterol';
-const FEMALE_CHOL_URL = 'http://127.0.0.1:5000//api/female_cholesterol';
-const ALL_SEX_CHOL_URL = 'http://127.0.0.1:5000//api/all_sex_cholesterol';
+const ALL_DATA_URL = 'https://project3flask.onrender.com/api/data';
+const MALE_CHOL_URL = 'https://project3flask.onrender.com//api/male_cholesterol';
+const FEMALE_CHOL_URL = 'https://project3flask.onrender.com//api/female_cholesterol';
+const ALL_SEX_CHOL_URL = 'https://project3flask.onrender.com//api/all_sex_cholesterol';
 
 var AGE_SORT;
 var MALE_CHOL;
