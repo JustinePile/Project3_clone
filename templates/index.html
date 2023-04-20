@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Heart Failure Prediction by Clinical Features</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+  <!-- 'Jumbotron' header  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Heart Failure Prediction</h1>
+        <h2>by Clinical Features</h2><br>
+        <p><em>Use the interactive charts below to explore the dataset</em></p>
+      </div>
+    </div>
+
+    <!-- Plot 1 -->
+    <!-- Nico -->
+    <div class="row">
+      <div class="col-md-3 info">
+        This bar graph displays the average cholesterol rate by chest pain. The average cholesterol for ATA among adults was 233.046. The average
+        cholesterol for NAP among aduts was 197.43. Adults that experience ASY chest pain had an average cholesterol rate of 186.65. Adults that experienced TA chest pain
+        had an average cholesterol rate of 207.06. Atypical Angina had the highest average rate cholesterol. 
+      </div>
+      <div class="col-md-9">
+        <div id="plot1"></div>
+      </div>
+    </div>
+
+    <!-- Plot 2 -->
+    <!-- Jake -->
+    <div class="row">
+      <div class="col-md-9 no-left-padding">
+        <div id="plot2"></div>
+      </div>
+      <div class="col-md-3 info info-row2">
+        <div><em>Select sex</em></div>
+        <select id="selDataset">
+          <option value="All Sexes">All Sexes</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <div>
+          <br>
+          Impact of the average cholesterol by age group in patients who have heart disease and those that do not.
+          <br>
+          <br>
+          While cholesterol does have
+          an impact on overall heart health, it appears that a lack of cholesterol is present in those with heart disease.
+        </div>
+      </div>
+    </div>
+
+    <!-- Plot 3 -->
+    <!-- Justine -->
+    <div class="row">
+      <div class="col-md-3 info">
+        <p>This plot shows three different categories of resting ECG results.</p>
+        <p>Per the dataset attribute information, the categories for Resting ECG are:</p>
+        <li>Normal: Normal</li>
+        <li>ST: has ST-T wave abnormality (T wave inversions and/or ST elevation or depression of &gt; 0.05 mV)</li>
+        <li>LVH: showing probable or definite left ventricular hypertrophy</li>
+
+      </div>
+      <div class="col-md-9">
+        <div id="plot3"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="center">
+      Heart Failure Prediction Dataset retrieved from
+      <a href="https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction"
+        target="_blank" rel="noopener noreferrer">Kaggle dataset </a>
+      created by fedesoriano (September 2021)
+    </div>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/logic.js"></script>
+
+</body>
+
+</html>
