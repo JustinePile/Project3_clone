@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 import pandas as pd
 import numpy as np
 import sqlite3
+from flask_cors import CORS
 
 
 conn = sqlite3.connect('resources/heart_db.db')
@@ -9,7 +10,7 @@ heart_data = pd.read_sql_query("SELECT * FROM heart_data", conn)
 conn.close()
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/api/data')
 def api_data():
